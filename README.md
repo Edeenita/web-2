@@ -125,30 +125,30 @@ echo $array_indexado[1]; // Imprime "Banana"
 
 ## Diferencias entre los arreglos `$_POST`, `$_GET` y `$_REQUEST` en PHP
 
-PHP proporciona tres arreglos globales que se utilizan para acceder a los datos enviados mediante formularios HTML y otros mecanismos de solicitud. Es importante entender las diferencias entre ellos para utilizarlos de manera apropiada en nuestras aplicaciones.
+```PHP proporciona tres arreglos globales que se utilizan para acceder a los datos enviados mediante formularios HTML y otros mecanismos de solicitud. Es importante entender las diferencias entre ellos para utilizarlos de manera apropiada en nuestras aplicaciones.```
 
 ### `$_GET`
-- **Descripción**: Contiene los datos enviados mediante el método GET.
-- **Uso**: Se utiliza principalmente para recuperar datos de consultas de URL.
+- **Descripción**: ```Contiene los datos enviados mediante el método GET.```
+- **Uso**: ```Se utiliza principalmente para recuperar datos de consultas de URL.```
 - **Características**:
-  - Los datos se envían como parte de la URL (cadena de consulta).
-  - Los datos son visibles en la barra de direcciones del navegador.
-  - Adecuado para formularios de búsqueda y filtros, donde los datos no son sensibles.
+  - ```Los datos se envían como parte de la URL (cadena de consulta).```
+  - ```Los datos son visibles en la barra de direcciones del navegador.```
+  - ```Adecuado para formularios de búsqueda y filtros, donde los datos no son sensibles.```
 
 ### `$_POST`
-- **Descripción**: Contiene los datos enviados mediante el método POST.
-- **Uso**: Se utiliza para enviar datos que no deberían ser visibles en la URL, como información sensible.
+- **Descripción**: ```Contiene los datos enviados mediante el método POST.```
+- **Uso**: ```Se utiliza para enviar datos que no deberían ser visibles en la URL, como información sensible.```
 - **Características**:
-  - Los datos se envían en el cuerpo de la solicitud HTTP.
-  - Los datos no son visibles en la barra de direcciones del navegador.
-  - Adecuado para formularios de registro, inicio de sesión, y cualquier operación que modifique el estado del servidor.
+  - ```Los datos se envían en el cuerpo de la solicitud HTTP.```
+  - ```Los datos no son visibles en la barra de direcciones del navegador.```
+  - ```Adecuado para formularios de registro, inicio de sesión, y cualquier operación que modifique el estado del servidor.```
 
 ### `$_REQUEST`
-- **Descripción**:Contiene los datos combinados de $_GET, $_POST y $_COOKIE.
-- **Uso**: Se utiliza para acceder a datos de solicitud sin importar el método de envío.
+- **Descripción**: ```Contiene los datos combinados de $_GET, $_POST y $_COOKIE.```
+- **Uso**: ```Se utiliza para acceder a datos de solicitud sin importar el método de envío.```
 - **Características**:
-  - Combina datos de $_GET, $_POST y $_COOKIE.
-  - Puede ser útil para simplificar el acceso a los datos, pero puede presentar problemas de seguridad y ambigüedad.
+  - ```Combina datos de $_GET, $_POST y $_COOKIE.```
+  - ```Puede ser útil para simplificar el acceso a los datos, pero puede presentar problemas de seguridad y ambigüedad.```
 
 
 
