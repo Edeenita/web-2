@@ -19,7 +19,7 @@
         foreach($arrphpNombres as $nombre){
             echo "<li>" . $nombre . "</li>";
         }
-        echo "<ul>"
+        echo "</ul>"
     ?>
 </body>
 </html>
