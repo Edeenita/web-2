@@ -17,15 +17,15 @@
 <!--UTILIZANDO EL METODO POST -->
     <form method="POST" action="ej3_02.php">
 
-        <label for="">Nombre:</label><input type="text" name="nombre">
-        <label for="">Apellido:</label><input type="text" name="apellido">
-        <label for="">Edad:</label><input type="number" name="edad">
+        <label for="">Nombre:</label><input type="text" name="nombre" required>
+        <label for="">Apellido:</label><input type="text" name="apellido" required>
+        <label for="">Edad:</label><input type="number" name="edad" required>
         <input type="submit">
 
     </form>
 
     <?php
-    //Si POST no esta vacio ejecuta :]
+    //Verificación del lado del cliente con el metodo POST :]
     if(!empty($_POST)){
 
         print_r($_POST);
@@ -47,16 +47,17 @@
 <!--UTILIZANDO EL METODO GET -->
 <form method="GET" action="ej3_02.php">
 
-        <label for="">Nombre:</label><input type="text" name="nombre">
-        <label for="">Apellido:</label><input type="text" name="apellido">
-        <label for="">Edad:</label><input type="number" name="edad">
+        <label for="">Nombre:</label><input type="text" name="nombre" >
+        <label for="">Apellido:</label><input type="text" name="apellido" >
+        <label for="">Edad:</label><input type="number" name="edad" >
         <input type="submit">
 
     </form>
 
     <?php
-    //Si GET no esta vacio ejecuta :]
-    if(!empty($_GET)){
+    
+    //Verificación del lado del servidor con el metodo GET :]
+    if (!empty($_GET['nombre']) && !empty($_GET['apellido']) && !empty($_GET['edad'])){
 
         print_r($_GET);
 
@@ -71,7 +72,12 @@
         echo("<br>");
         echo("Edad: " .$edad);
         echo("<br>");
-    }  
+    }  else {
+            // Solo mostrar el mensaje si el formulario ha sido enviado y hay campos vacíos
+            if (!empty($_GET['nombre']) || !empty($_GET['apellido']) || !empty($_GET['edad'])) {
+                echo "<br><b>Todos los campos son obligatorios.</b>";
+            }
+    }
 ?>
 
 <p>-------------------------------------------------------------------------------</p>
