@@ -7,6 +7,11 @@
      - [Página Estática](#página-estática)
      - [Página Dinámica](#página-dinámica)
    - [C. ¿Por qué es necesario tener un servidor web para realizar esto?](#c-por-qué-es-necesario-tener-un-servidor-web-para-realizar-esto)
+1. [EJERCICIO 2](#ejercicio-2)
+      - [Diferencias entre arreglos asociativos e indexados](#diferencias-entre-arreglos-asociativos-e-indexados)
+         - [Indexados](#indexados)
+         - [Asociativos](#asociativos)
+         - [Diferencias Clave](#diferencias-clave)
 
 ## EJERCICIO 1:
 ### A. ¿Qué extensión debe tener la página?
@@ -47,3 +52,51 @@ genera el HTML resultantey lo envía al navegador. Esto permite acceder a recurs
 gestionar bases de datos, asegurar el código fuente y crear contenido dinámico
 y personalizado para el usuario.
 ```
+## EJERCICIO 2:
+### Diferencias entre arreglos asociativos e indexados
+#### Indexados:
+- **Definición**: Son arreglos en los que las claves (o índices) son números enteros.
+- **Índices**: Los índices son asignados automáticamente empezando desde 0, a menos que se especifique lo contrario.
+- **Ejemplo**:
+  ```php
+  $array_indexado = array("Manzana", "Banana", "Cereza");
+  // Equivalente a:
+  // $array_indexado = [0 => "Manzana", 1 => "Banana", 2 => "Cereza"];
+  ```
+- **Acceso a elementos**: Los elementos se acceden mediante sus índices numéricos.
+ ```php
+echo $array_indexado[1]; // Imprime "Banana"
+```
+#### Asociativos:
+- **Definición**:Son arreglos en los que las claves son cadenas de texto (o cualquier otro tipo de dato, pero generalmente se usan cadenas).
+- **Índices**: Los índices son definidos explícitamente por el programador.
+- **Ejemplo**:
+  ```php
+  $array_asociativo = array(
+     "fruta1" => "Manzana",
+     "fruta2" => "Banana",
+     "fruta3" => "Cereza"
+   );
+   // Equivalente a:
+   // $array_asociativo = ["fruta1" => "Manzana", "fruta2" => "Banana", "fruta3" => "Cereza"];
+
+- **Acceso a elementos**: Los elementos se acceden mediante sus índices numéricos.
+ ```php
+echo $array_indexado[1]; // Imprime "Banana"
+```
+### Diferencias Clave
+
+#### Tipo de Índices:
+
+- **Arreglos Indexados**: Utilizan índices numéricos, asignados automáticamente.
+- **Arreglos Asociativos**: Utilizan índices definidos por el usuario, que suelen ser cadenas.
+
+#### Acceso a Elementos:
+
+- **Arreglos Indexados**: Se accede a los elementos utilizando índices numéricos.
+- **Arreglos Asociativos**: Se accede a los elementos utilizando claves específicas definidas por el usuario.
+
+#### Uso Común:
+
+- **Arreglos Indexados**: Son útiles cuando se necesita almacenar una lista de elementos donde el orden es importante y se puede acceder a ellos por su posición.
+- **Arreglos Asociativos**: Son útiles cuando se necesita un mapeo de claves a valores, permitiendo acceder a los elementos por un identificador significativo en lugar de por un número.
