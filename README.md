@@ -1,4 +1,12 @@
+
 # TRABAJO PRACTICO 1 
+## Tabla de Contenidos
+1. [EJERCICIO 1](#ejercicio-1)
+   - [A. ¿Qué extensión debe tener la página?](#a-qué-extensión-debe-tener-la-página)
+   - [B. Lo que acabas de hacer: ¿Es una página dinámica o una página estática? ¿Cuál es la diferencia?](#b-lo-que-acabas-de-hacer-es-una-página-dinámica-o-una-página-estática-cuál-es-la-diferencia)
+     - [Página Estática](#página-estática)
+     - [Página Dinámica](#página-dinámica)
+   - [C. ¿Por qué es necesario tener un servidor web para realizar esto?](#c-por-qué-es-necesario-tener-un-servidor-web-para-realizar-esto)
 
 ## EJERCICIO 1:
 ### A. ¿Qué extensión debe tener la página?
