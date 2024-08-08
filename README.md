@@ -13,7 +13,7 @@
          - [Asociativos](#asociativos)
          - [Diferencias Clave](#diferencias-clave)
 3. [EJERCICIO 3](#ejercicio-3)
-      -[A. POST y GET. ¿Cuál es la diferencia?](#A.-Envíe-el-formulario-usando-los-métodos-POST-y-GET.-¿Cuál-es-la-diferencia?-¿En-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro?)
+      - [A. POST y GET. ¿Cuál es la diferencia?](#a.-envíe-el-formulario-usando-los-métodos-post-y-get.-cuál-es-la-diferencia-en-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro)
 
 ## EJERCICIO 1:
 ### A. ¿Qué extensión debe tener la página?
