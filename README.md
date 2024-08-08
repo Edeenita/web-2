@@ -15,6 +15,10 @@
 3. [EJERCICIO 3](#ejercicio-3)
       - [A. Envíe el formulario usando los métodos POST y GET. ¿Cuál es la diferencia? ¿En qué situaciones considera mejor utilizar uno u el otro?](#a-envíe-el-formulario-usando-los-métodos-post-y-get-cuál-es-la-diferencia-en-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro)
       - [B. Investigue las diferencias entre los arreglos $_POST $_GET y $_REQUEST de PHP](#b-investigue-las-diferencias-entre-los-arreglos-_post-_get-y-_request-de-php)
+      - [C. Validaciones de datos en el servidor](#c.-valicaciones-de-datos-en-el-servidor)
+         - [Validaciones del Lado del Cliente](#validaciones-del-lado-del-cliente)
+         - [Validaciones del Lado del Servidor](#validaciones-del-lado-del-servidor)
+        
 
 
 ## EJERCICIO 1:
