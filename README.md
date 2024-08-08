@@ -171,8 +171,8 @@ del lado del cliente o del lado del servidor?
 ```
 
 #### **Validaciones del Lado del Cliente:**
-    - *required* dentro del `<input>`
-    - Ventajas:
+   - *required* dentro del `<input>`
+   - Ventajas:
         - Mejora la experiencia del usuario al proporcionar retroalimentación inmediata.
         - Reduce el número de solicitudes al servidor si los datos no son válidos.
  - Desventajas:
