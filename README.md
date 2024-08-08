@@ -107,17 +107,17 @@ echo $array_indexado[1]; // Imprime "Banana"
 
 #### GET:
 
-- Cuando se desea obtener datos sin realizar cambios en el servidor.
-- Para formularios que no contienen información sensible.
-- Cuando se quiere permitir a los usuarios marcar o compartir la URL generada.
-- Mejor para solicitudes idempotentes y para recuperar datos sin efectos secundarios. Ideal para formularios de búsqueda o filtros.
+- ```Cuando se desea obtener datos sin realizar cambios en el servidor.```
+- ```Para formularios que no contienen información sensible.```
+- ```Cuando se quiere permitir a los usuarios marcar o compartir la URL generada.```
+- ```Mejor para solicitudes idempotentes y para recuperar datos sin efectos secundarios. Ideal para formularios de búsqueda o filtros.```
 
 #### POST:
 
-- Cuando se envía información sensible, como contraseñas o datos personales.
-- Para formularios que implican cambios en el servidor, como registros de usuarios, compras, etc.
-- Cuando se envía una gran cantidad de datos.
-- Mejor para enviar datos sensibles o grandes, y para operaciones que modifican el estado del servidor. Ideal para formularios de registro, inicio de sesión, compras, etc.
+- ```Cuando se envía información sensible, como contraseñas o datos personales.```
+- ```Para formularios que implican cambios en el servidor, como registros de usuarios, compras, etc.```
+- ```Cuando se envía una gran cantidad de datos.```
+- ```Mejor para enviar datos sensibles o grandes, y para operaciones que modifican el estado del servidor. Ideal para formularios de registro, inicio de sesión, compras, etc.```
 
 ## EJERCICIO 3:
 
