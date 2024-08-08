@@ -152,6 +152,10 @@ echo $array_indexado[1]; // Imprime "Banana"
   - ```Combina datos de $_GET, $_POST y $_COOKIE.```
   - ```Puede ser útil para simplificar el acceso a los datos, pero puede presentar problemas de seguridad y ambigüedad.```
 
+### **Resumen**:
+- `$_GET`: ```Utilizar cuando los datos no son sensibles y deben ser accesibles como parte de la URL.```
+- `$_POST`: ```Utilizar cuando los datos son sensibles o cuando se está modificando el estado del servidor.```
+- `$_REQUEST`: ```Utilizar con precaución, ya que puede introducir ambigüedades y problemas de seguridad. Es preferible especificar claramente si se está utilizando $_GET o $_POST.```
 
 
 
