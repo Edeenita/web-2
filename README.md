@@ -40,8 +40,10 @@ y luego envía el HTML resultante al navegador del usuario.
 ### C. ¿Por qué es necesario tener un servidor web para realizar esto?
 ```
 Para ejecutar scripts PHP y generar páginas dinámicas, es necesario tener un servidor web,
-ya que PHP es un lenguaje del lado del servidor que no puede ser interpretado directamente por los navegadores.
-Al usar XAMPP, que incluye Apache y PHP, el servidor web procesa el código PHP, genera el HTML resultante
-y lo envía al navegador. Esto permite acceder a recursos del servidor, gestionar bases de datos,
-asegurar el código fuente y crear contenido dinámico y personalizado para el usuario.
+ya que PHP es un lenguaje del lado del servidor que no puede ser interpretado directamente
+por los navegadores.
+Al usar XAMPP, que incluye Apache y PHP, el servidor web procesa el código PHP,
+genera el HTML resultantey lo envía al navegador. Esto permite acceder a recursos del servidor,
+gestionar bases de datos, asegurar el código fuente y crear contenido dinámico
+y personalizado para el usuario.
 ```
