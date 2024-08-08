@@ -170,7 +170,7 @@ Ningún campo puede estar vacío.
 del lado del cliente o del lado del servidor? 
 ```
 
-- **Validaciones del Lado del Cliente:**
+#### **Validaciones del Lado del Cliente:**
     - *required* dentro del `<input>`
     - Ventajas:
         - Mejora la experiencia del usuario al proporcionar retroalimentación inmediata.
@@ -179,7 +179,7 @@ del lado del cliente o del lado del servidor?
      - Las validaciones del lado del cliente pueden ser eludidas fácilmente deshabilitando JavaScript o manipulando el HTML.
      - No es suficiente por sí sola para garantizar la seguridad de los datos.
 
-- **Validaciones del Lado del Servidor:**
+#### **Validaciones del Lado del Servidor:**
    - Se verifica que los campos no estén vacíos antes de procesar y mostrar los datos:
       ```php
       if (!empty($_METHOD['nombre']) && !empty($_METHOD['apellido']) && !empty($_METHOD['edad']))
