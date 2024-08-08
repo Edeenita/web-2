@@ -123,8 +123,6 @@ echo $array_indexado[1]; // Imprime "Banana"
 - ```Cuando se envía una gran cantidad de datos.```
 - ```Mejor para enviar datos sensibles o grandes, y para operaciones que modifican el estado del servidor. Ideal para formularios de registro, inicio de sesión, compras, etc.```
 
-## EJERCICIO 3:
-
 ### B. Investigue las diferencias entre los arreglos $_POST $_GET y $_REQUEST de PHP
 
 ## Diferencias entre los arreglos `$_POST`, `$_GET` y `$_REQUEST` en PHP
