@@ -157,5 +157,31 @@ echo $array_indexado[1]; // Imprime "Banana"
 - `$_POST`: ```Utilizar cuando los datos son sensibles o cuando se está modificando el estado del servidor.```
 - `$_REQUEST`: ```Utilizar con precaución, ya que puede introducir ambigüedades y problemas de seguridad. Es preferible especificar claramente si se está utilizando $_GET o $_POST.```
 
+### C. Validaciones de datos en el servidor
 
+```
+Genere validaciones de datos en el servidor. 
+Ningún campo puede estar vacío. 
+¿Cuál es la diferencia entre realizar estas verificaciones 
+del lado del cliente o del lado del servidor? 
+```
 
+- **Validaciones del Lado del Cliente:**
+    - *required* dentro del `<input>`
+    - Ventajas:
+        - Mejora la experiencia del usuario al proporcionar retroalimentación inmediata.
+        - Reduce el número de solicitudes al servidor si los datos no son válidos.
+ - Desventajas:
+     - Las validaciones del lado del cliente pueden ser eludidas fácilmente deshabilitando JavaScript o manipulando el HTML.
+     - No es suficiente por sí sola para garantizar la seguridad de los datos.
+
+- **Validaciones del Lado del Servidor:**
+   - Se verifica que los campos no estén vacíos antes de procesar y mostrar los datos:
+      ```php
+      if (!empty($_METHOD['nombre']) && !empty($_METHOD['apellido']) && !empty($_METHOD['edad']))
+      ```
+   - Ventajas:
+      - Asegura que los datos sean válidos y seguros antes de procesarlos o almacenarlos.
+      - No puede ser eludida por el usuario, ya que es independiente del navegador o del cliente.
+   - Desventajas:
+      - Los usuarios no reciben retroalimentación inmediata sobre los errores, lo que puede afectar la experiencia.        
