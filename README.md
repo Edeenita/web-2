@@ -7,7 +7,7 @@
      - [Página Estática](#página-estática)
      - [Página Dinámica](#página-dinámica)
    - [C. ¿Por qué es necesario tener un servidor web para realizar esto?](#c-por-qué-es-necesario-tener-un-servidor-web-para-realizar-esto)
-1. [EJERCICIO 2](#ejercicio-2)
+2. [EJERCICIO 2](#ejercicio-2)
       - [Diferencias entre arreglos asociativos e indexados](#diferencias-entre-arreglos-asociativos-e-indexados)
          - [Indexados](#indexados)
          - [Asociativos](#asociativos)
@@ -100,3 +100,23 @@ echo $array_indexado[1]; // Imprime "Banana"
 
 - **Arreglos Indexados**: Son útiles cuando se necesita almacenar una lista de elementos donde el orden es importante y se puede acceder a ellos por su posición.
 - **Arreglos Asociativos**: Son útiles cuando se necesita un mapeo de claves a valores, permitiendo acceder a los elementos por un identificador significativo en lugar de por un número.
+
+## EJERCICIO 3:
+
+### A. Envíe el formulario usando los métodos POST y GET. ¿Cuál es la diferencia? ¿En qué situaciones considera mejor utilizar uno u el otro?
+
+#### GET:
+
+- Cuando se desea obtener datos sin realizar cambios en el servidor.
+- Para formularios que no contienen información sensible.
+- Cuando se quiere permitir a los usuarios marcar o compartir la URL generada.
+- Mejor para solicitudes idempotentes y para recuperar datos sin efectos secundarios. Ideal para formularios de búsqueda o filtros.
+
+#### POST:
+
+- Cuando se envía información sensible, como contraseñas o datos personales.
+- Para formularios que implican cambios en el servidor, como registros de usuarios, compras, etc.
+- Cuando se envía una gran cantidad de datos.
+- Mejor para enviar datos sensibles o grandes, y para operaciones que modifican el estado del servidor. Ideal para formularios de registro, inicio de sesión, compras, etc.
+
+
