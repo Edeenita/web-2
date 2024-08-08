@@ -13,7 +13,7 @@
          - [Asociativos](#asociativos)
          - [Diferencias Clave](#diferencias-clave)
 3. [EJERCICIO 3](#ejercicio-3)
-      - [A. POST y GET. ¿Cuál es la diferencia?](#a.-envíe-el-formulario-usando-los-métodos-post-y-get.-cuál-es-la-diferencia-en-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro)
+      - [A. Envíe el formulario usando los métodos POST y GET. ¿Cuál es la diferencia? ¿En qué situaciones considera mejor utilizar uno u el otro?](#a-envíe-el-formulario-usando-los-métodos-post-y-get-cuál-es-la-diferencia-en-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro)
       - [B. Investigue las diferencias entre los arreglos $_POST $_GET y $_REQUEST de PHP](#b-investigue-las-diferencias-entre-los-arreglos-_post-_get-y-_request-de-php)
 
 
