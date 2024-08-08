@@ -1,6 +1,6 @@
 
 # TRABAJO PRACTICO 1 
-## Tabla de Contenidos
+## Tabla de Contenidos TP1
 1. [EJERCICIO 1](#ejercicio-1)
    - [A. ¿Qué extensión debe tener la página?](#a-qué-extensión-debe-tener-la-página)
    - [B. Lo que acabas de hacer: ¿Es una página dinámica o una página estática? ¿Cuál es la diferencia?](#b-lo-que-acabas-de-hacer-es-una-página-dinámica-o-una-página-estática-cuál-es-la-diferencia)
@@ -12,6 +12,8 @@
          - [Indexados](#indexados)
          - [Asociativos](#asociativos)
          - [Diferencias Clave](#diferencias-clave)
+3. [EJERCICIO 3](#ejercicio-3)
+      -[A. POST y GET. ¿Cuál es la diferencia?](#A.-Envíe-el-formulario-usando-los-métodos-POST-y-GET.-¿Cuál-es-la-diferencia?-¿En-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro?)
 
 ## EJERCICIO 1:
 ### A. ¿Qué extensión debe tener la página?
