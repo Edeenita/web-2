@@ -39,7 +39,8 @@
         </tbody>
     </table>
 
-    <p class="nota">Nota: El IMC por sí solo no es una herramienta de diagnóstico. Si tenés dudas, consultá a un médico.</p>
+    <p class="note">Nota: El IMC por sí solo no es una herramienta de diagnóstico. Si tenés dudas, consultá a un médico.</p>
+
     <!-- Separación del ejercicio con la consigna! -->
     <p>---------------------------------------------------------------------------------------------------------------</p>
 
@@ -53,20 +54,31 @@
 
     <?php
     
-    //Verificación del lado del servidor con el metodo GET :]
     if (!empty($_GET['peso']) && !empty($_GET['altura'])){
 
         $peso = $_GET['peso'];
         $altura = $_GET['altura'];
+        
 
-        $imc = $peso/$altura;
+        if ($altura > 0 && $peso > 0){
+            $alturacm = $altura / 100;
+            $imc = $peso/(($alturacm*$alturacm));
 
-        echo("<br>");
-        echo("Tu IMC es: " .$imc);
-        echo("<br>");
-        //hacer el if para que se vea la tabla
-
+            echo("<br>");
+            echo("Tu IMC es: " .$imc);
+            if($imc <=18.5){
+                echo("<br> Su peso es: BAJO");
+            } else if ($imc > 18.5 && $imc <= 24.99){
+                echo("<br> Su peso es: NORMAL");
+            } else if ($imc > 25 && $imc <= 29.99){
+                echo("<br>  Su peso es: SOBREPESO");
+            } else if ($imc >= 30){
+                echo("<br> Su peso es: OBESIDAD");
+            }
         } else {
+            echo "<br><b>Introduce datos validos.</b>";
+        }
+    } else {
             // Solo mostrar el mensaje si el formulario ha sido enviado y hay campos vacíos
             if (!empty($_GET['peso']) || !empty($_GET['altura'])) {
                 echo "<br><b>Todos los campos son obligatorios.</b>";
