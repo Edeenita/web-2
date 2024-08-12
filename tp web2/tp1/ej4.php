@@ -6,9 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Ejercicio 2 del tp1</h2>
-    <p>Escribir un programa que muestre una lista html generada desde el servidor a través de </p>
-    <p>un arreglo. Identifique las diferencias entre arreglos asociativos e indexados </p>
+    <h2>Ejercicio 4 del tp1</h2>
+    <p>Modifique el ejercicio 2 para que el usuario mediante links html pueda ir modificando el tamaño de la lista generada. </p>
 
     <!-- Separación del ejercicio con la consigna! -->
     <p>---------------------------------------------------------------------------------------------------------------</p>
