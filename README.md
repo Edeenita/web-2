@@ -90,7 +90,7 @@ echo $array_indexado[1]; // Imprime "Banana"
 
 - **Acceso a elementos**: Los elementos se acceden mediante sus índices numéricos.
  ```php
-echo $array_indexado[1]; // Imprime "Banana"
+echo $array_asociativo["fruta1"]; // imprime "manzana"
 ```
 ### Diferencias Clave
 
