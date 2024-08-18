@@ -1,33 +1,14 @@
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    margin-right: 10px;
-}
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-.resaltado{
-    background-color: aquamarine;
-}
-
-.multigual{
-    background-color: yellow;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 8px;
+    margin: 20px 0;
+    font-size: 18px;
     text-align: left;
 }
-
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
 th {
-    background-color: rgb(255, 255, 157);
-    color: black;
+    background-color: #f4f4f4;
 }

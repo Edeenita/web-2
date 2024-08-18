@@ -7,54 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Ejercicio 1 del tp1</h2>
-    <p>Imprimir la siguiente tabla de multiplicar generada automáticamente en PHP. </p>
-    <p>Modifique el ejercicio para que el límite de la tabla sea ingresado por un usuario.</p>
-
-    <!-- Separación del ejercicio con la consigna! -->
-    <p>---------------------------------------------------------------------------------------------------------------</p>
-
-
-    <form method="GET" action="ej6.php">
-        <label for="">Tamaño de la tabla: </label><input type="text" name="maxveces">
-        <label for="">Cantidad de veces a multiplicar: </label><input type="text" name="cant">
+    <h2>EJERCICIO 6 TP1</h2>
+    <p>Una persona desea invertir dinero en un banco, el cual le otorga un % de interés 
+    <p>mensual. Escribir un programa para simular la inversión que imprima cuál será la 
+    <p>cantidad de dinero que esta persona tendrá mes a mes durante un año. Genere una 
+    <p>tabla HTML para mostrar el resultado.</p>
+    </p>    
+    </p>    
+    </p>
+<!-- jajaja cerre mal todos los parrafos  -->
+<p>--------------------------------------------------------------------------------------------------</p>
+    <h3>LA TASA DE INTERES DE ESTE BANCO ES DEL 6% ANUAL</h3>
+    <form method="get" action="ej6.php">
+        <label for="">Monto ha invertir:</label>
+        <input type="number" name="P">
         <input type="submit">
     </form>
+    
+    <?php 
+        if(!empty($_GET['P'])){
+            $p = $_GET['P']; // monto principal.
+            if ($p > 0){
+                $r = 0.06; // la tasa de interés anual (en decimal).
+                $n = 12; // el número de períodos de capitalización por año (12 para mensual).
+                $im = $r/$n; // interés mensual 
+                for($i = 1; $i <= $n; $i++){
+                    $ma = $p * pow((1 + $im), $i); //MONTO ACUMULADO ?> 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mes</th>
+                                <th>Saldo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>Mes <?php echo($i); ?> </td>
+                        <td><?php echo number_format($ma, 2);  ?></td></tr>
+                        </tbody>
+                    </table>
+            <?php }
 
-    <?php
-    //funcionalidad de la tabla ✅
-    // con el metodo get definir cuantas veces lo va a hacer ✅
-    // modificar la tabla html
-
-        if (!empty($_GET['maxveces']) && !empty($_GET['cant'])){
-            $maxveces = $_GET['maxveces'];
-            $cant = $_GET['cant'];
-            if($maxveces > 0 && $cant > 0){
-                echo "<table>";
-                echo "<tr><th>Multiplicador</th><th>Resultado</th></tr>";
-                for($i = 1; $i <= $maxveces; $i++){
-                    echo "<tr><td class='resaltado'>Tabla del $i</td></tr>";
-                    for($j = 1; $j <= $cant; $j++){
-                        $multiplicacion = $i * $j;
-                        if ($i == $j){
-                            echo "<tr><td class='multigual'>$i x $j</td><td>$multiplicacion</td></tr>";
-                        } else {
-                            echo "<tr><td>$i x $j</td><td>$multiplicacion</td></tr>";
-                        }
-
-                    }
-                }
-                echo "</table>";
-            } else {
-                echo "<br><b>Introduce datos validos, todos los numeros deben ser positivos.</b>";
+            } else{
+                echo "<br><b>Introduce datos validos.</b>";
             }
         } else{
-                if(!empty($_GET['maxveces']) || !empty($_GET['cant'])){
-                    echo "<br><b>Todos los campos son obligatorios.</b>";
-                }
+            if(!empty($_GET['P'])){
+                echo "<br><b>Todos los campos son obligatorios.</b>";;
             }
+        }
+        
 
-    
     ?>
+
+
 </body>
 </html>
