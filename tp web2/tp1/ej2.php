@@ -32,6 +32,8 @@
             "YunYun" => "Rival de megumin",
             "Komekko" => "Hermana pequeña de Megumin"
         );
+        
+        var_dump($arrphpPersonajesKonosubaDescripcion);
 
         // Generación de la lista HTML
         echo "<ul>";
