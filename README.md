@@ -194,5 +194,5 @@ del lado del cliente o del lado del servidor?
       - Los usuarios no reciben retroalimentación inmediata sobre los errores, lo que puede afectar la experiencia.
 
 ## EJERCICIO 7
- - Libreria Pi PHP
+#### Libreria Pi PHP
    `<link>` : <https://www.php.net/manual/es/function.pi.php>
