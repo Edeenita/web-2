@@ -20,7 +20,8 @@
       - [C. Validaciones de datos en el servidor](#c-validaciones-de-datos-en-el-servidor)
          - [Validaciones del Lado del Cliente](#validaciones-del-lado-del-cliente)
          - [Validaciones del Lado del Servidor](#validaciones-del-lado-del-servidor)
-        
+7. [EJERCICIO 7](#ejercicio-7)
+      - [Libreria Pi PHP](#libreria-pi-php)        
 
 
 ## EJERCICIO 1:
@@ -190,4 +191,8 @@ del lado del cliente o del lado del servidor?
       - Asegura que los datos sean válidos y seguros antes de procesarlos o almacenarlos.
       - No puede ser eludida por el usuario, ya que es independiente del navegador o del cliente.
    - Desventajas:
-      - Los usuarios no reciben retroalimentación inmediata sobre los errores, lo que puede afectar la experiencia.        
+      - Los usuarios no reciben retroalimentación inmediata sobre los errores, lo que puede afectar la experiencia.
+
+## EJERCICIO 7
+ - Libreria Pi PHP
+   `<link>` : <https://www.php.net/manual/es/function.pi.php>
