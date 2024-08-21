@@ -41,5 +41,3 @@
     <a href="ej4.php">VOLVER</a>
 </body>
 </html>
-
->>>>>>> 330ce62fc0736657809b7e89bbe01acf4380f907

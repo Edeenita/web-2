@@ -54,4 +54,3 @@ if (!empty($_GET['operacion']) && !empty($_GET['valor_1']) && !empty($_GET['valo
 echo '</div>'; 
 echo '<a href="index.html" class="volver">VOLVER</a>';
 
->>>>>>> 330ce62fc0736657809b7e89bbe01acf4380f907
