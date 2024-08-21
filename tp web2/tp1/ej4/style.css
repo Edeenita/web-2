@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 form {
     margin-bottom: 20px;
 }
@@ -30,4 +31,38 @@ th, td {
 th {
     background-color: rgb(255, 255, 157);
     color: black;
+=======
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.resaltado{
+    background-color: aquamarine;
+}
+
+.multigual{
+    background-color: yellow;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(255, 255, 157);
+    color: black;
+>>>>>>> 330ce62fc0736657809b7e89bbe01acf4380f907
 }
