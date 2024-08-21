@@ -1,7 +1,7 @@
 <?php
 
 require_once('operaciones.php');
-echo '<link rel="stylesheet" href="style.css">';
+echo '<link rel="stylesheet" href="css/style.css">';
 
 echo '<nav>
         <ul>
