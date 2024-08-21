@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 th, td {
     border: 2px solid #000;
     padding-right: 100px;
@@ -6,13 +5,5 @@ th, td {
 
 .note{
     font-style: italic;
-=======
-th, td {
-    border: 2px solid #000;
-    padding-right: 100px;
-}
 
-.note{
-    font-style: italic;
->>>>>>> 330ce62fc0736657809b7e89bbe01acf4380f907
 }
