@@ -52,5 +52,5 @@ if (!empty($_GET['operacion']) && !empty($_GET['valor_1']) && !empty($_GET['valo
 }
 
 echo '</div>'; 
-echo '<a href="index.html" class="volver">VOLVER</a>';
+echo '<a href="index.html" class="volver_calculadora">VOLVER</a>';
 
