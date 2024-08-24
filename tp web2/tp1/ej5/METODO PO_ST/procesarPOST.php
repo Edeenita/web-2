@@ -17,5 +17,4 @@
         echo("<br>");
     }  
 ?>
-
 <a href="ej5POST.php">VOLVER</a>
