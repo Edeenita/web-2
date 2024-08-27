@@ -17,21 +17,20 @@ el ejercicio para que el límite de la tabla sea ingresado por un usuario. -->
     </form>
     
     <?php
-        if(isset[$_GET['numero']]){
+        if(isset($_GET['numero'])){
             $numero=$_GET['numero'];
         }else{
             $numero=20;
         }
 
-        echo "<table>"
+        echo "<table>" ?>
             <tr></tr>
 
-        echo "</table>"
-           
+        <?php echo "</table>";
 
         for($i=0; $i<count($numero);$i++){
             for($j=0; $j<count($numero);$j++){
-                if($i)
+                if($i);
             }
         }
         
