@@ -267,11 +267,11 @@ del lado del cliente o del lado del servidor?
 
 ### Diseñe la tabla de ruteo para la siguiente funcionalidad de un sistema web. No es necesario implementar nada, simplemente definir las acciones del router.
 
-#### Obtener la lista de usuarios del sistema
+   - Obtener la lista de usuarios del sistema
 
-#### Agregar un nuevo usuario
+   - Agregar un nuevo usuario
 
-#### Ver la información de un usuario dado su DNI
+   - Ver la información de un usuario dado su DNI
 
 ### Diseño Tabla de Ruteo
 
