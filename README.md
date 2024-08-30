@@ -234,7 +234,7 @@ del lado del cliente o del lado del servidor?
 
    ### ¿Qué es y que nos permite hacer el archivo .htaccess?
 
-   #### Archivo `.htaccess`
+   #### Archivo `.htaccess`:
       ```
       El archivo .htaccess es un archivo de configuración 
       utilizado en servidores web Apache que permite controlar 
@@ -242,6 +242,7 @@ del lado del cliente o del lado del servidor?
       en un nivel específico del directorio.
       ```
    #### Funciones clave del archivo `.htaccess`:
+
       - *Redirecciones de URL*: Facilita la redirección de URLs antiguas a nuevas y permite la migración de tráfico de HTTP a HTTPS.
       - *Control de acceso*: Permite restringir el acceso a ciertas partes del sitio web mediante autenticación por contraseña o limitación por dirección IP.
       - *Reescritura de URLs*: Habilita la creación de URLs semánticas a través de la reescritura de URLs.
@@ -249,6 +250,7 @@ del lado del cliente o del lado del servidor?
       - *Protección de seguridad*: Bloquea bots maliciosos y protege el sitio contra ataques.
 
    #### Codigo Generico de los `.htaccess`:
+   
       ```xml
          <IfModule mod_rewrite.c>
          RewriteEngine On
