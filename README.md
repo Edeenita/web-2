@@ -240,10 +240,10 @@ del lado del cliente o del lado del servidor?
 
 #### Archivo .htaccess:
   
-      El archivo .htaccess es un archivo de configuración 
-      utilizado en servidores web Apache que permite controlar 
-      el comportamiento de un sitio web o aplicación 
-      en un nivel específico del directorio.
+El archivo .htaccess es un archivo de configuración 
+utilizado en servidores web Apache que permite controlar 
+el comportamiento de un sitio web o aplicación 
+en un nivel específico del directorio.
 
 #### Funciones clave del archivo .htaccess:
 
