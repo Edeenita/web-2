@@ -249,8 +249,8 @@ del lado del cliente o del lado del servidor?
       - *Páginas de error*: Define páginas de error para el usuario en caso de errores como 404.
       - *Protección de seguridad*: Bloquea bots maliciosos y protege el sitio contra ataques.
 
-   #### Codigo Generico de los `.htaccess`:
-   
+   #### Codigo Generico de los .htaccess:
+
       ```xml
          <IfModule mod_rewrite.c>
          RewriteEngine On
