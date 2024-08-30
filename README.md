@@ -211,7 +211,7 @@ del lado del cliente o del lado del servidor?
       determina la lógica a seguir, permitiendo responder de manera 
       adecuada a la solicitud del usuario.
    ```
-   
+
 ##### Funciones principales del ruteo:
    - *Redireccionamiento de URLs*: Asocia URLs específicas con controladores o acciones en el backend.
    - *Gestión de parámetros*: Extrae y pasa parámetros desde la URL al controlador correspondiente.
@@ -253,8 +253,7 @@ del lado del cliente o del lado del servidor?
       - *Protección de seguridad*: Bloquea bots maliciosos y protege el sitio contra ataques.
 
    #### Codigo Generico de los `.htaccess`:
-
-      xml
+   
          <IfModule mod_rewrite.c>
          RewriteEngine On
          RewriteCond %{REQUEST_FILENAME} -f [OR]
