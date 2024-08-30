@@ -205,7 +205,11 @@ del lado del cliente o del lado del servidor?
 
 #### Ruteo en la Aplicación Web
    ```
-      El ruteo es un componente esencial de esta aplicación web, responsable de definir cómo se manejan y direccionan las solicitudes HTTP. Cada URL específica se mapea a un controlador o función que determina la lógica a seguir, permitiendo responder de manera adecuada a la solicitud del usuario.
+      El ruteo es un componente esencial de esta aplicación web, responsable de 
+      definir cómo se manejan y direccionan las solicitudes HTTP. 
+      Cada URL específica se mapea a un controlador o función que 
+      determina la lógica a seguir, permitiendo responder de manera 
+      adecuada a la solicitud del usuario.
    ```
 ##### Funciones principales del ruteo:
    - *Redireccionamiento de URLs*: Asocia URLs específicas con controladores o acciones en el backend.
