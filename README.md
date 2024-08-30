@@ -201,7 +201,7 @@ del lado del cliente o del lado del servidor?
 
 ## EJERCICIO 1
 
-### 1. ¿Para que se utiliza el ruteo en una aplicación web?
+### ¿Para que se utiliza el ruteo en una aplicación web?
 
 #### Ruteo en la Aplicación Web
    ```
@@ -218,4 +218,14 @@ del lado del cliente o del lado del servidor?
    - *Generación de URLs*: Facilita la creación de enlaces dinámicos dentro de la aplicación.
    - *Seguridad*: Se integra con sistemas de autenticación y autorización para controlar el acceso a los recursos.
 
-### 2. ¿Qué ventajas tiene la generación de URL’s semánticas?
+## EJERCICIO 2
+
+### ¿Qué ventajas tiene la generación de URL’s semánticas?
+
+#### Ventajas de la Generación de URLs Semánticas
+   - *UX*: Las URLs semánticas son más fáciles de leer, entender y recordar, mejorando la navegación y la interacción del usuario con la           aplicación.   
+   - *SEO*: Al incluir palabras clave relevantes, las URLs semánticas facilitan que los motores de búsqueda indexen y clasifiquen mejor el contenido, mejorando su visibilidad.
+   - *Claridad y Relevancia*: Proporcionan información sobre el contenido de la página directamente en la URL, lo que aumenta la confianza y la relevancia para los usuarios.
+   - *Facilidad al compartir*: Son más fáciles de compartir y entender en cualquier plataforma, ya que no contienen parámetros innecesarios que puedan confundir.
+   - *Gestión y Mantenimiento*: Simplifican la identificación y actualización de rutas en el código, facilitando el desarrollo y mantenimiento de la aplicación.
+   - *Seguridad*: Al evitar parámetros innecesarios, se reduce el riesgo de manipulaciones, mejorando la seguridad de la aplicación.
