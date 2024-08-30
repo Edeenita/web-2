@@ -253,13 +253,13 @@ del lado del cliente o del lado del servidor?
       - *Protección de seguridad*: Bloquea bots maliciosos y protege el sitio contra ataques.
 
    #### Codigo Generico de los `.htaccess`:
-   
-         <IfModule mod_rewrite.c>
-         RewriteEngine On
-         RewriteCond %{REQUEST_FILENAME} -f [OR]
-         RewriteCond %{REQUEST_FILENAME} -d
 
-         RewriteRule \.(?:css|js|jpe?g|gif|png)$ - [L]
-         RewriteRule ^(.*)$ router.php?action = $1 [QSA, L]
+         <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteCond %{REQUEST_FILENAME} -f [OR]
+            RewriteCond %{REQUEST_FILENAME} -d
+
+            RewriteRule \.(?:css|js|jpe?g|gif|png)$ - [L]
+            RewriteRule ^(.*)$ router.php?action = $1 [QSA, L]
          </IfModule>
       
