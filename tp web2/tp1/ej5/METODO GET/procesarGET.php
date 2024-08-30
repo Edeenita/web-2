@@ -12,7 +12,7 @@
         echo("<br>");
         echo("Nombre: " .$nombre);
         echo("<br>");
-        echo("Apellido: " .$apellido);
+        echo("Apellido: " .$apellido);  
         echo("<br>");
         echo("Edad: " .$edad);
         echo("<br>");

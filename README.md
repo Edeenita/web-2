@@ -1,5 +1,3 @@
-# TENGO QUE MODIFICAR EL ORDEN DE LAS  CONSIGNAS DEBIDO A QUE HA SIDO CAMBIADO :D
-
 
 # TRABAJO PRACTICO 1 
 ## Tabla de Contenidos TP1
@@ -14,7 +12,7 @@
          - [Indexados](#indexados)
          - [Asociativos](#asociativos)
          - [Diferencias Clave](#diferencias-clave)
-3. [EJERCICIO 3](#ejercicio-3)
+5. [EJERCICIO 5](#ejercicio-5)
       - [A. Envíe el formulario usando los métodos POST y GET. ¿Cuál es la diferencia? ¿En qué situaciones considera mejor utilizar uno u el otro?](#a-envíe-el-formulario-usando-los-métodos-post-y-get-cuál-es-la-diferencia-en-qué-situaciones-considera-mejor-utilizar-uno-u-el-otro)
       - [B. Investigue las diferencias entre los arreglos $_POST $_GET y $_REQUEST de PHP](#b-investigue-las-diferencias-entre-los-arreglos-_post-_get-y-_request-de-php)
       - [C. Validaciones de datos en el servidor](#c-validaciones-de-datos-en-el-servidor)
@@ -112,7 +110,7 @@ echo $array_asociativo["fruta1"]; // imprime "manzana"
 - **Arreglos Indexados**: Son útiles cuando se necesita almacenar una lista de elementos donde el orden es importante y se puede acceder a ellos por su posición.
 - **Arreglos Asociativos**: Son útiles cuando se necesita un mapeo de claves a valores, permitiendo acceder a los elementos por un identificador significativo en lugar de por un número.
 
-## EJERCICIO 3:
+## EJERCICIO 5:
 
 ### A. Envíe el formulario usando los métodos POST y GET. ¿Cuál es la diferencia? ¿En qué situaciones considera mejor utilizar uno u el otro?
 
@@ -196,3 +194,12 @@ del lado del cliente o del lado del servidor?
 ## EJERCICIO 7
 #### Libreria Pi PHP
    `<link>` : <https://www.php.net/manual/es/function.pi.php>
+
+# TRABAJO PRACTICO 2
+## Tabla de Contenidos TP1
+
+
+# EJERCICIO 1
+
+### 1. ¿Para que se utiliza el ruteo en una aplicación web?
+
