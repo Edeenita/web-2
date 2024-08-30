@@ -253,7 +253,7 @@ del lado del cliente o del lado del servidor?
 
    #### Codigo Generico de los `.htaccess`:
 
-      ```xml
+      xml
          <IfModule mod_rewrite.c>
          RewriteEngine On
          RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -262,4 +262,4 @@ del lado del cliente o del lado del servidor?
          RewriteRule \.(?:css|js|jpe?g|gif|png)$ - [L]
          RewriteRule ^(.*)$ router.php?action = $1 [QSA, L]
          </IfModule>
-      ```
+      
