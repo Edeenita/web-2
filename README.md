@@ -199,7 +199,19 @@ del lado del cliente o del lado del servidor?
 ## Tabla de Contenidos TP1
 
 
-# EJERCICIO 1
+## EJERCICIO 1
 
 ### 1. ¿Para que se utiliza el ruteo en una aplicación web?
 
+#### Ruteo en la Aplicación Web
+   ```
+      El ruteo es un componente esencial de esta aplicación web, responsable de definir cómo se manejan y direccionan las solicitudes HTTP. Cada URL específica se mapea a un controlador o función que determina la lógica a seguir, permitiendo responder de manera adecuada a la solicitud del usuario.
+   ```
+##### Funciones principales del ruteo:
+   - *Redireccionamiento de URLs*: Asocia URLs específicas con controladores o acciones en el backend.
+   - *Gestión de parámetros*: Extrae y pasa parámetros desde la URL al controlador correspondiente.
+   - *Manejo de métodos HTTP*: Administra diferentes tipos de solicitudes (GET, POST, PUT, DELETE) en una misma URL.
+   - *Generación de URLs*: Facilita la creación de enlaces dinámicos dentro de la aplicación.
+   - *Seguridad*: Se integra con sistemas de autenticación y autorización para controlar el acceso a los recursos.
+
+### 2. ¿Qué ventajas tiene la generación de URL’s semánticas?
