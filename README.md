@@ -225,7 +225,37 @@ del lado del cliente o del lado del servidor?
 #### Ventajas de la Generación de URLs Semánticas
    - *UX*: Las URLs semánticas son más fáciles de leer, entender y recordar, mejorando la navegación y la interacción del usuario con la           aplicación.   
    - *SEO*: Al incluir palabras clave relevantes, las URLs semánticas facilitan que los motores de búsqueda indexen y clasifiquen mejor el contenido, mejorando su visibilidad.
-   - *Claridad y Relevancia*: Proporcionan información sobre el contenido de la página directamente en la URL, lo que aumenta la confianza y la relevancia para los usuarios.
+   - *Claridad y Relevancia*: Proporcionan información sobre el contenido de la página directamente en la URL, lo que aumenta la confianza, la relevancia y la claridad para los usuarios.
    - *Facilidad al compartir*: Son más fáciles de compartir y entender en cualquier plataforma, ya que no contienen parámetros innecesarios que puedan confundir.
    - *Gestión y Mantenimiento*: Simplifican la identificación y actualización de rutas en el código, facilitando el desarrollo y mantenimiento de la aplicación.
    - *Seguridad*: Al evitar parámetros innecesarios, se reduce el riesgo de manipulaciones, mejorando la seguridad de la aplicación.
+
+   ## EJERCICIO 3
+
+   ### ¿Qué es y que nos permite hacer el archivo .htaccess?
+
+   #### Archivo `.htaccess`
+      ```
+      El archivo .htaccess es un archivo de configuración 
+      utilizado en servidores web Apache que permite controlar 
+      el comportamiento de un sitio web o aplicación 
+      en un nivel específico del directorio.
+      ```
+   #### Funciones clave del archivo `.htaccess`:
+      - *Redirecciones de URL*: Facilita la redirección de URLs antiguas a nuevas y permite la migración de tráfico de HTTP a HTTPS.
+      - *Control de acceso*: Permite restringir el acceso a ciertas partes del sitio web mediante autenticación por contraseña o limitación por dirección IP.
+      - *Reescritura de URLs*: Habilita la creación de URLs semánticas a través de la reescritura de URLs.
+      - *Páginas de error*: Define páginas de error para el usuario en caso de errores como 404.
+      - *Protección de seguridad*: Bloquea bots maliciosos y protege el sitio contra ataques.
+
+   #### Codigo Generico de los `.htaccess`:
+      ```xml
+         <IfModule mod_rewrite.c>
+         RewriteEngine On
+         RewriteCond %{REQUEST_FILENAME} -f [OR]
+         RewriteCond %{REQUEST_FILENAME} -d
+
+         RewriteRule \.(?:css|js|jpe?g|gif|png)$ - [L]
+         RewriteRule ^(.*)$ router.php?action = $1 [QSA, L]
+         </IfModule>
+      ```
