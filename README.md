@@ -211,6 +211,7 @@ del lado del cliente o del lado del servidor?
       determina la lógica a seguir, permitiendo responder de manera 
       adecuada a la solicitud del usuario.
    ```
+   
 ##### Funciones principales del ruteo:
    - *Redireccionamiento de URLs*: Asocia URLs específicas con controladores o acciones en el backend.
    - *Gestión de parámetros*: Extrae y pasa parámetros desde la URL al controlador correspondiente.
