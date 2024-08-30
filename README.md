@@ -263,3 +263,34 @@ del lado del cliente o del lado del servidor?
             RewriteRule ^(.*)$ router.php?action = $1 [QSA, L]
          </IfModule>
       
+## EJERCICIO 4
+
+### Diseñe la tabla de ruteo para la siguiente funcionalidad de un sistema web. No es necesario implementar nada, simplemente definir las acciones del router.
+
+#### Obtener la lista de usuarios del sistema
+
+#### Agregar un nuevo usuario
+
+#### Ver la información de un usuario dado su DNI
+
+### Diseño Tabla de Ruteo
+
+| Método HTTP | Ruta                    | Acción                        | Descripción                                                    |
+|-------------|-------------------------|-------------------------------|----------------------------------------------------------------|
+| `GET`       | `/usuarios`             | `obtenerListaUsuariosSys()`      | Obtener la lista completa de usuarios del sistema.             |
+| `POST`      | `/usuarios`             | `agregarNuevoUsuario()`            | Agregar un nuevo usuario al sistema.                           |
+| `GET`       | `/usuarios/{dni}`       | `verDniUsuario(dni)`  | Ver la información de un usuario dado su DNI.                  |
+
+### Descripción de las rutas
+
+1. **GET `/usuarios`**
+   - **Acción**: `obtenerListaUsuariosSys()`
+   - **Descripción**: Obtener la lista completa de usuarios registrados en la app.
+
+2. **POST `/usuarios`**
+   - **Acción**: `agregarNuevoUsuario()`
+   - **Descripción**: Agregar un nuevo usuario a la app desde el <form>.
+
+3. **GET `/usuarios/{dni}`**
+   - **Acción**: `verDniUsuario(dni)`
+   - **Descripción**: Obtener el DNI de un usuario en específico, utilizando su id {dni} como identificador en la URL.
