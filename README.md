@@ -226,6 +226,7 @@ del lado del cliente o del lado del servidor?
 ### ¿Qué ventajas tiene la generación de URL’s semánticas?
 
 #### Ventajas de la Generación de URLs Semánticas
+
    - *UX*: Las URLs semánticas son más fáciles de leer, entender y recordar, mejorando la navegación y la interacción del usuario con la           aplicación.   
    - *SEO*: Al incluir palabras clave relevantes, las URLs semánticas facilitan que los motores de búsqueda indexen y clasifiquen mejor el contenido, mejorando su visibilidad.
    - *Claridad y Relevancia*: Proporcionan información sobre el contenido de la página directamente en la URL, lo que aumenta la confianza, la relevancia y la claridad para los usuarios.
@@ -239,10 +240,12 @@ del lado del cliente o del lado del servidor?
 
    #### Archivo `.htaccess`:
   
+      ```
       El archivo .htaccess es un archivo de configuración 
       utilizado en servidores web Apache que permite controlar 
       el comportamiento de un sitio web o aplicación 
       en un nivel específico del directorio.
+      ```
 
    #### Funciones clave del archivo `.htaccess`:
 
