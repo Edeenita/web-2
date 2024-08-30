@@ -31,8 +31,10 @@ el servidor ejecutará el código PHP y enviará el HTML resultante al navegador
 ```
 ### B. Lo que acabas de hacer: ¿Es una página dinámica o una página estática? ¿Cuál es la diferencia?
 ```
-Lo que acabamos de hacer es una página dinámica. La razón es que estamos utilizando PHP para generar contenido HTML.
-PHP es un lenguaje de programación del lado del servidor, lo que significa que el servidor procesa el código PHP
+Lo que acabamos de hacer es una página dinámica. La razón es que estamos utilizando PHP
+para generar contenido HTML.
+PHP es un lenguaje de programación del lado del servidor, lo que significa que el 
+servidor procesa el código PHP
 y luego envía el HTML resultante al navegador del usuario.
 ```
 #### Diferencia entre página estática y página dinámica:
