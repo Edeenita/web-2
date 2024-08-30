@@ -277,9 +277,9 @@ del lado del cliente o del lado del servidor?
 
 | Método HTTP | Ruta                    | Acción                        | Descripción                                                    |
 |-------------|-------------------------|-------------------------------|----------------------------------------------------------------|
-| `GET`       | `/usuarios`             | `obtenerListaUsuariosSys()`      | Obtener la lista completa de usuarios del sistema.             |
-| `POST`      | `/usuarios`             | `agregarNuevoUsuario()`            | Agregar un nuevo usuario al sistema.                           |
-| `GET`       | `/usuarios/{dni}`       | `verDniUsuario(dni)`  | Ver la información de un usuario dado su DNI.                  |
+| **GET**       | `/usuarios`             | `obtenerListaUsuariosSys()`      | Obtener la lista completa de usuarios del sistema.             |
+| **POST**      | `/usuarios`             | `agregarNuevoUsuario()`            | Agregar un nuevo usuario al sistema.                           |
+| **GET**       | `/usuarios/{dni}`       | `verDniUsuario(dni)`  | Ver la información de un usuario dado su DNI.                  |
 
 ### Descripción de las rutas
 
