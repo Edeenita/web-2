@@ -1,25 +1,20 @@
 <?php
 /**
- * Esta pagina PHP muestra una noticia enviada por parametro GET desde la URL.
+ * Esta pagina PHP muestra el home de noticias cargadas dinamicamente.
  * 
  * Utiliza el arreglo $noticias compartido simulando registros que saldrian de una Base de Datos.
  */
 
-require_once './db_fake.php';
-
-// utiliza el arreglo $_GET para tomar el parametro que viene desde la url (noticias.php?id=<int>)
-// faltarìa agregar una verificación para controlar si existe la noticia
-
-$idNoticia = $_GET['id'];
-$noticia = $noticias[$idNoticia];
 
 // fecha actual para el footer
 $fecha = new DateTime();
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="<?php echo BASE_URL ?>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +23,8 @@ $fecha = new DateTime();
     <title>TUDAI - Diario Digital</title>
 </head>
 <body>
+
+    <!-- main header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -38,28 +35,13 @@ $fecha = new DateTime();
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.php">Noticias</a>
+                    <a class="nav-link" aria-current="page" href="home">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about">Nosotros</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-
-    <main class="container mt-5">
-      <section class="noticia">
-        <h1 class="mb-5"><?php echo $noticia->titulo ?></h1>
-        <img class="noticia-image" src="<?php echo $noticia->imagen ?>" alt="...">
-        <p class="lead mt-3"><?php echo $noticia->contenido ?></p>
-      </section>
-    </main>
-
-    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-      <div class="align-items-center">
-        <span class="text-muted"><?php echo $fecha->format('Y')?> TUDAI, UNICEN</span>
-      </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
-</html>
