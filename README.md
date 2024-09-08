@@ -198,7 +198,16 @@ del lado del cliente o del lado del servidor?
    `<link>` : <https://www.php.net/manual/es/function.pi.php>
 
 # TRABAJO PRACTICO 2
-## Tabla de Contenidos TP1
+## Tabla de Contenidos TP2
+
+1. [EJERCICIO 1](#ejercicio-1)
+   - [Ruteo](#ruteo-en-la-aplicación-web)
+2. [EJERCICIO 2](#ejercicio-2)
+   - [URL Semantica](#ventajas-de-la-generación-de-urls-semánticas)
+3. [EJERCICIO 3](#ejercicio-3)
+   - [-HTACCESS](#archivo-htaccess)
+4. [EJERCICIO 4](#ejercicio-4)
+   - [Tabla de RUTEO](#diseño-tabla-de-ruteo)
 
 
 ## EJERCICIO 1
