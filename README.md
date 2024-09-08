@@ -1,3 +1,6 @@
+# TABLA DE CONTENIDOS:
+1. [TP1](#trabajo-practico-1)
+2. [TP2](#trabajo-practico-2)
 
 # TRABAJO PRACTICO 1 
 ## Tabla de Contenidos TP1
