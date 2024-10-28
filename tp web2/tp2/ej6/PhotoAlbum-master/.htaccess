@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ router.php?object=$1 [L,QSA]
