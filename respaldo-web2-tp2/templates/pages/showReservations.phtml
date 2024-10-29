@@ -1,0 +1,46 @@
+<?php 
+require_once './templates/layouts/header.phtml'; 
+?>
+<div class="container mt-4">
+    <h1 class="mb-4">Listado de Reservas</h1>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Habitación</th>
+                <th>Cliente</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (empty($reservations)): ?>
+                <tr>
+                    <td colspan="5" class="text-center">No hay reservas disponibles.</td>
+                </tr>
+            <?php else: ?>
+                <?php foreach ($reservations as $reservation): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($roomNames[$reservation->id_habitacion]); ?></td>
+                        <td><?php echo htmlspecialchars($reservation->nombre_cliente); ?></td>
+                        <td><?php echo htmlspecialchars($reservation->Check_in); ?></td>
+                        <td><?php echo htmlspecialchars($reservation->Check_out); ?></td>
+                        <td>
+                            <form action="<?php echo BASE_URL . 'deleteReservation'; ?>" method="POST" style="display: inline;">
+                                <input type="hidden" name="id_reserva" value="<?php echo htmlspecialchars($reservation->id_reserva); ?>">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar esta reserva?');">Eliminar</button>
+                            </form>
+                            <form action="<?php echo BASE_URL . 'editReservation'; ?>" method="POST" style="display: inline;">
+                                <input type="hidden" name="id_reserva" value="<?php echo htmlspecialchars($reservation->id_reserva); ?>">
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+<?php 
+require_once './templates/layouts/footer.phtml';
+?>

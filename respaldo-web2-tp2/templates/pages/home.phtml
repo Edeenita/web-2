@@ -1,0 +1,54 @@
+<?php 
+require_once "./templates/layouts/header.phtml"; 
+?>
+<main class="container mt-5">
+    <section class="custom-header text-start py-5">
+        <div class="container">
+            <h1 class="title">Encuentra tu próxima estancia</h1>
+            <p class="subtitle">Busca ofertas en hoteles, casas y mucho más...</p>
+        </div>
+    </section>
+<?php if(!$this->user): ?>
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Viaja más y gasta menos</h2>
+            <p class="lead">Inicia sesión y ahorra</p>
+            <p class="mb-4">Ahorra un <strong>0%</strong> en alojamientos participantes. Busca la etiqueta azul de Genius.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="<?php echo BASE_URL; ?>showLogin" class="btn btn-primary btn-lg">Inicia sesión</a>
+                <a href="<?php echo BASE_URL; ?>showSignup" class="btn btn-outline-primary btn-lg">Hazte una cuenta</a>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+    <section class="room-list">
+        <h2 class="text-center mb-4">Habitaciones destacadas</h2>
+        <div class="row g-4">
+            <?php foreach (array_slice($rooms, 0, 6) as $room): // Mostrar solo las 6 habitaciones más recientes ?>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="<?php echo htmlspecialchars($room->foto_habitacion); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($room->Nombre); ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo htmlspecialchars($room->Nombre); ?></h5>
+                            <p class="card-text"><strong>Tipo:</strong> <?php echo htmlspecialchars($room->Tipo); ?></p>
+                            <p class="card-text"><strong>Capacidad:</strong> <?php echo htmlspecialchars($room->Capacidad); ?> personas</p>
+                            <p class="card-text"><strong>Precio por noche:</strong> $<?php echo number_format($room->Precio, 2); ?></p>
+                            <a href="<?php echo BASE_URL . 'RoomsDetails/' . htmlspecialchars($room->id_habitacion); ?>" class="btn btn-primary w-100 mt-3">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+    <section class="mt-5 text-center">
+        <h3>¿No encontraste lo que querías?</h3>
+        <p>Puedes ver el listado completo de habitaciones o categorías.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="<?php echo BASE_URL . 'Rooms'; ?>" class="btn btn-outline-primary">Explora todas las Habitaciones</a>
+            <a href="<?php echo BASE_URL . 'ListCategory'; ?>" class="btn btn-outline-primary">Explorar por Categorías</a>
+        </div>
+    </section>
+</main>
+<?php 
+require_once "./templates/layouts/footer.phtml";
+?>

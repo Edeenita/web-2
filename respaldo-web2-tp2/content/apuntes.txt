@@ -1,0 +1,68 @@
+Requerimientos Funcionales:
+Acceso público:
+✅Estas secciones pueden ser accedidas de manera pública, no es necesario loguearse.
+    ➡ Se puede quitar los Middleware para que puedan navegar y hacer una validación para saber si el usuario
+        es null o no para mostrar ciertos apartados:
+        sessionAuthMiddleware($res); // Chequea que el usuario esté logueado
+        verifyAuthMiddleware($res);
+        ✅[Por checkear si esta bien implementado]
+✅(A) Listado de ítems: Se debe poder visualizar todos los ítems cargados
+✅(A) Detalle de ítem: Se debe poder navegar y visualizar cada ítem particularmente 
+✅(B) Listado de categorías: Se debe poder visualizar un listado con todas las categorías cargadas
+✅(B) Listado de ítems por categoría: Se debe poder visualizar los ítems perteneciente a una categoría seleccionada
+
+Acceso administrador de datos:
+✅Debe existir una sección para la administración de datos, la cual es accedida solo a usuarios administradores del sitio.
+✅(A) El usuario administrador debe loguearse con usuario y contraseña.
+✅ Debe exisitir al menos un administrador con usuario “webadmin” y contraseña “admin” para pruebas.
+✅(B) El usuario debe poder desloguearse (logout)
+✅Importante: En cada ítem siempre se debe mostrar el nombre de la categoría a la que pertenece.
+✅Solo los usuarios logueados pueden modificar las categorías y los ítems.
+
+Se debe crear servicios de ABM (alta/baja/modificación) para administrar los datos:
+(A) Administrar Ítems (entidad del lado N de la relación).
+    ✅Lista de Items
+    ✅Agregar Items
+        ✅ Al agregar Items (Noticias/Productos/…) se debe poder elegir la categoría a la que pertenecen utilizando un select que muestre el nombre de la misma.
+    ✅Eliminar Items
+    ✅Editar Items
+(B) Administrar Categorías (entidad del lado 1 de la relación)
+    ✅Lista de Categorías
+    ✅Agregar Categorías
+    ✅Eliminar Categorias
+    ✅Editar Categorías
+    ✅Se puede subir una foto cuando se crea el ítem o categoría (Puede cargarse por url).
+       ➡️ ✅ Opcional 
+
+Base de datos:
+✅config.php
+✅deploy
+
+Requerimientos Técnicos (no funcionales):
+✅Todos los HTML deben mostrarse utilizando plantillas (phtml o Smarty)
+✅Todas las acciones realizadas en la página deben estar manejadas utilizando el patrón MVC.
+✅Las URL deben ser semánticas (Checkear los nombres descriptivos de las URL, el ✅.htacess implementado)
+✅El sitio debe incluir el archivo sql para instalar la base de datos.
+
+ADDS:
+✅Implementar un home
+ ➡ ✅ mejorarlo
+
+Notas:
+
+✅*Autenticación y seguridad: Se recomienda comenzar con la sección “privada” sin autenticación. Una vez dada la clase de seguridad es muy sencillo protegerlo con usuario y contraseña.
+✅**Vistas: Se recomienda mantener una UI muy sencilla hasta que se dé la clase de Templates.
+
+Pautas de corrección:
+✅❓buenas prácticas
+✅lección apropiada de cada tecnología para cada punto a resolver (Checkear)
+✅correcta división de responsabilidades en las clases
+❓❓❓no repetición de código
+✅❓ identificadores (nombres de clases, variables, etc) descriptivos (Hay que revisarlos.)
+
+
+Entrega:
+📆 20 DE OCTUBRE
+✅ Update README ➡ una breve explicación de cómo desplegar el sitio en un servidor con Apache y MySQL, como también cualquier información necesaria para su uso, como pueden ser usuarios y contraseñas de administrador. 
+
+
